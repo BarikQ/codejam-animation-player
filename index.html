@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CodeJam-Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="tools_bar" id="tools_bar">
+        <h3>Choose figure</h3>
+        <div class="tool_form" id="tool_form">
+          <canvas class="figure" id="canvas_square" width="50px" height="50px"></canvas>
+          <canvas
+            class="figure"
+            id="canvas_rectangle"
+            width="75px"
+            height="50px"
+          ></canvas>
+          <canvas class="figure" id="canvas_circle" width="50px" height="50px"></canvas>
+          <canvas class="figure" id="canvas_triangle" width="60px" height="50px"></canvas>
+          <canvas class="figure" id="canvas_hexagon" width="60px" height="60px"></canvas>
+        </div>
+        <h3>Choose color</h3>
+        <div class="tool_color" id="tool_color">
+          <div class="color blue active" id="blue"></div>
+          <div class="color white" id="white"></div>
+          <div class="color red" id="red"></div>
+        </div>
+        <h3>Your choosen figure</h3>
+        <div class="mainFrame" id="mainFrame"></div>
+        <h3>Frame Rate</h3>
+        <div class="tool_frame" id="tool_frame">
+          <p class="rangeValue" id="rangeValue">2</p>
+          <input type="range" id="range" class="range" min="0" max="24" step="1" />
+        </div>
+      </div>
+
+      <div class="previewBlock" id="previewBlock">
+        <button class="fullScreen" id="fullScreen"></button>
+        <button class="playBtn" id="playBtn"></button>
+        <button class="stopBtn" id="stopBtn"></button>
+      </div>
+      <div class="framesContainer" id="framesContainer">
+        <button class="addBtn" id="addBtn"></button>
+        <button class="copyBtn" id="copyBtn"></button>
+        <button class="deleteBtn" id="deleteBtn"></button>
+        <div class="frames" id="frames">
+          <div class="frame activeFrame" id="frame-1"></div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
