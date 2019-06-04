@@ -97,7 +97,7 @@ window.onload = function main() {
       if (activeFigure[0] === undefined) return 0;
       frame = activeFigure[0].cloneNode(true);
 
-      if (activeFrame.contains(frame)) return 0;
+      if (activeFrame.contains(activeFigure[0])) return 0;
 
       const ctx = frame.getContext('2d');
       ctx.drawImage(activeFigure[0], 0, 0);
